@@ -1,24 +1,55 @@
-def my_hash
-  # use the literal constructor to set the variable, my_hash, equal to a hash with key/value pairs of your choice.
-  my_hash = {"name" => "Alexis", "age" => 26, "location" => "LA"}
+def new_hash
+	new_hash = {}
 end
 
-
-def shipping_manifest
-  #set a variable called `shipping_manifest`, equal to a hash
-  #fill that hash with key/value pairs that describe the following information:
-  #We have 5 whale bone corsets, 2 porcelain vases and 3 oil paintings
-  shipping_manifest = {"whale bone corsets" => 5, "porcelain vases" => 2, "oil paintings" => 3}
+def actor
+	actor = {name: "Dwayne The Rock Johnson"}
 end
 
-def retrieval
-  shipping_manifest = {"whale bone corsets" => 5, "porcelain vases" => 2, "oil paintings" => 3}
-  shipping_manifest["oil paintings"]
+def monopoly
+	monopoly = {
+		:railroads => {}
+	}
+
 end
 
-def adding
-  shipping_manifest = {"whale bone corsets" => 5, "porcelain vases" => 2, "oil paintings" => 3}
+def monopoly_with_second_tier
+	monopoly = {
+		:railroads => {pieces: 4, names: {}, rent_in_dollars: {}}
+	}
 
-  shipping_manifest["pearl necklace"] = 1
-  shipping_manifest
+end
+
+def monopoly_with_third_tier
+
+	monopoly = {
+		:railroads => {
+			pieces: 4,
+			names: {
+				reading_railroad: {},
+				pennsylvania_railroad: {},
+				b_and_o_railroad: {},
+				shortline: {}
+			},
+			rent_in_dollars: {one_piece_owned: 25, two_pieces_owned: 50, three_pieces_owned: 100, four_pieces_owned: 200}
+		}
+	}
+
+
+end
+
+def monopoly_with_fourth_tier
+	monopoly = {
+		:railroads => {
+			pieces: 4,
+			names: {
+				reading_railroad: {"mortgage_value" => "$100"},
+				pennsylvania_railroad: {"mortgage_value" => "$200"},
+				b_and_o_railroad: {"mortgage_value" => "$400"},
+				shortline: {"mortgage_value" => "$800"}
+			},
+			rent_in_dollars: {one_piece_owned: 25, two_pieces_owned: 50, three_pieces_owned: 100, four_pieces_owned: 200}
+		}
+	}
+
 end
