@@ -3,6 +3,7 @@ def my_hash
   my_hash = {"name" => "Alexis", "age" => 26, "location" => "LA"}
 end
 
+
 def shipping_manifest
   #set a variable called `shipping_manifest`, equal to a hash
   #fill that hash with key/value pairs that describe the following information:
